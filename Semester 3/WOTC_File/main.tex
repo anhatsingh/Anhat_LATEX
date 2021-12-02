@@ -1,0 +1,41 @@
+\documentclass[12pt]{report}
+\input{setup}
+
+\title{Project File}
+\newcommand{\subtitle}{Anhat Singh}
+\author{Roll No: 17032000307}
+
+\begin{document}
+\setstretch{1.4}
+
+\include{title-page}
+\newpage
+\pagenumbering{roman}
+
+\pagestyle{plain}
+\include{sections/1-ack}
+\pagestyle{fancy}
+
+\customtoc
+
+\pagenumbering{arabic}
+
+\include{sections/2-what_are_essays}
+\include{sections/3-arg}
+\include{sections/4-narrative}
+\include{sections/5-descriptive}
+\include{sections/6-expo}
+
+\addcontentsline{toc}{chapter}{Conclusion}
+\include{sections/7-conc}
+
+\pagestyle{plain}
+\addcontentsline{toc}{chapter}{Bibliography}
+\include{sections/8-bib}
+\pagestyle{fancy}
+
+%\bibliography{bibliography}
+
+\include{back-cover}
+
+\end{document}
